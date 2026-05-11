@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/challenges/staircase/problem
+
 package main
 
 import "fmt"
