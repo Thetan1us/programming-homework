@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список справ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Список справ</h1>
+
+      <div class="input-area">
+        <input type="text" id="taskInput" placeholder="Що потрібно зробити?" />
+        <button id="addTaskBtn">Додати</button>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Всі</button>
+        <button class="filter-btn" data-filter="active">Активні</button>
+        <button class="filter-btn" data-filter="completed">Виконані</button>
+      </div>
+
+      <ul id="taskList"></ul>
+
+      <div class="controls">
+        <div class="counters">
+          <span id="totalCounter">Усього: 0</span> |
+          <span id="activeCounter">Не виконано: 0</span>
+        </div>
+        <button id="clearCompletedBtn">Очистити виконані</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
