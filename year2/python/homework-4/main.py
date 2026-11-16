@@ -5,7 +5,6 @@ def calculate_discount(order_amount: float, client_status: str) -> float | None:
     """
 
     right_status = client_status == "new" or client_status == "silver" or client_status == "gold"
-    print(right_status)
 
     if order_amount <= 0 or not right_status:
          print("Неправильно введено вартість замовлення або статус клієнта")
