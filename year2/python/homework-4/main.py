@@ -34,6 +34,6 @@ status = input("Введіть статус клієнта: ").lower()
 discount = calculate_discount(price, status)
 
 if not discount is None:
-    print(f"Фінальна вартість для клієнта {status} - {get_final_price(price, discount)} грн")
+    print(f"Фінальна вартість для клієнта {status} - {get_final_price(price, discount):.2f} грн")
 else:
     print("Знайдено помилку в оформленні замовлення. Програму буде завершено.")
